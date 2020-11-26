@@ -23,20 +23,21 @@
         }
 
         .masuk{
-            padding: 10px 5px;
+            padding: 10px 20px;
             font-size: 10px;
             border: none;
-            margin-left: 1300px;
+            margin-left: 1250px;
         }
 
         .register{
-            padding: 10px 5px;
+            padding: 10px 20px;
             font-size: 10px;
             border: none;
         }
 
         .search-container input[type=text] {
-            margin-right: 500px;
+            width: 500px;
+            margin-right: 550px;
             padding: 10px;
             margin-top: 5px;
             font-size: 17px;
@@ -49,8 +50,8 @@
             width: 50px;
             length: 100px;
             padding: 10px 10px;
-            margin-right: 100px;
-            margin-left: 630px;
+            margin-right: auto;
+            margin-left: 450px;
         }
 
         .search-container button {
@@ -89,25 +90,17 @@
         <button class="register">Register</button>
         <h1 class="title">ReadAndWArite</h1>
         <div class="search-container">
-            <form action="/homeview">
+            <form action="/homeview" style="width: fit-content;">
               <input type="text" placeholder="Search for stationary" name="search">
             </form>
         </div>
-        <a href="#">
-            <div class="alat">
-                <img class="objek" src="{!! asset('assets/notebook.png') !!}" alt="notebook.png">
-            </div>
-        </a>
-        <div class="alat">
-            <img class="objek" src="{!! asset('assets/book.png') !!}" alt="book.png">
-        </div>
-        <div class="alat">
-            <img class="objek" src="{!! asset('assets/pen.jpg') !!}" alt="pen.jpg">
-        </div>
-        <div class="alat">
-            <img class="objek" src="{!! asset('assets/rulerr.png') !!}" alt="rulerr.png">
-        </div>
-    </div>
+        @foreach ($products as $product)
+            <a href="#">
+                <div class="alat">
+                    <img class="objek" src="{{ asset('assets/'.$product->Image) }}" alt="{{$product->Image}}">
+                </div>
+            </a>
+        @endforeach
     </div>
     
     
