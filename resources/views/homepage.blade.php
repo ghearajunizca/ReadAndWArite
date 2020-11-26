@@ -89,13 +89,15 @@
         <button class="register">Register</button>
         <h1 class="title">ReadAndWArite</h1>
         <div class="search-container">
-            <form action="/action_page.php">
+            <form action="/homeview">
               <input type="text" placeholder="Search for stationary" name="search">
             </form>
         </div>
-        <div class="alat">
-            <img class="objek" src="{!! asset('assets/notebook.png') !!}" alt="notebook.png">
-        </div>
+        <a href="#">
+            <div class="alat">
+                <img class="objek" src="{!! asset('assets/notebook.png') !!}" alt="notebook.png">
+            </div>
+        </a>
         <div class="alat">
             <img class="objek" src="{!! asset('assets/book.png') !!}" alt="book.png">
         </div>
@@ -107,6 +109,7 @@
         </div>
     </div>
     </div>
+    
     
 </body>
 </html>
