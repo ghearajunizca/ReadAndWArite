@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ReadAndWArite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('bootstrap/cssbootstrap/css/bootstrap.css')}}">
 
     <style>
         body{
@@ -20,19 +23,7 @@
             text-align: justify;
             margin-top: 150px;
             margin-left: 600px;
-        }
-
-        .masuk{
-            padding: 10px 20px;
-            font-size: 10px;
-            border: none;
-            margin-left: 1250px;
-        }
-
-        .register{
-            padding: 10px 20px;
-            font-size: 10px;
-            border: none;
+            font-family: 'Cantata One', serif;
         }
 
         .search-container input[type=text] {
@@ -83,11 +74,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light"></nav>
-    <div class="navbar">
-        <span class="navbar-brand mb-0 h1"></span>
-        <button class="masuk">Login</button>
-        <button class="register">Register</button>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:pink; font-family: 'Cantata One', serif;">
+        <a class="navbar-brand" href="#">ReadAndWArite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="/login">Login <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/regis">Register<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
         <h1 class="title">ReadAndWArite</h1>
         <div class="search-container">
             <form action="/homeview" style="width: fit-content;">

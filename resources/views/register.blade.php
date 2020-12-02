@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('bootstrap/cssbootstrap/css/bootstrap.css')}}">
 
-    <title>ReadAndWArite</title>
+    <title>Register</title>
     <style>
       .loginpage{
         width: 90%;
@@ -46,11 +46,15 @@
             
         <div style="background-color: whitesmoke; width: 100%; height:600px;">
             <div class="container text-center pt-3">
-                <h3>Login</h3>
+                <h3>Register</h3>
             </div>
           <div class="loginpage">
             <div>
                 <form>
+                    <div class="form-group" style="width: 500px">
+                        <label for="exampleInputName">Name</label>
+                        <input type="nama" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+                      </div>
                     <div class="form-group" style="width: 500px">
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -60,6 +64,10 @@
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
                     <div class="form-group form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Check me out</label>

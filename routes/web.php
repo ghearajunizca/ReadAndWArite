@@ -22,8 +22,16 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/regis/', function(){
+    return view('register');
+});
+
 Route::get('/welcome', 'App\Http\Controllers\ProductController@homepage');
 
 Route::get('/homeview/', function(){
     return view('home');
+});
+
+Route::get('/addprod/', function(){
+    return view('addprod');
 });
